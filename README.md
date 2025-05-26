@@ -1,50 +1,77 @@
-# React + TypeScript + Vite
+# 🎨 PixMorph – Image Format Converter (Frontend Only)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Convert images between formats like **JPG**, **JPEG**, **PNG**, and more – right in your browser.  
+Crafted with 💜 using **React**, **TypeScript**, and a sleek UI powered by **TailwindCSS**.
+Its Just a simple frontend website
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📁 Upload images directly
+- 🖼️ Live image preview
+- ℹ️ Name, Size & Resolution info
+- 🔄 Convert to JPG / JPEG / PNG
+- ⬇️ Download the converted image instantly
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📸 Demo
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+![image](https://github.com/user-attachments/assets/a899646b-ca99-4e21-9a47-0ecac6ed2098)
+
+
+> Add a `preview.png` screenshot of your app in action (like the one you just uploaded)
+
+---
+
+## 🧱 Tech Stack
+
+| Technology | Purpose         |
+|------------|-----------------|
+| React      | UI Framework    |
+| TypeScript | Static Typing   |
+| TailwindCSS| Styling         |
+| FileReader | Image Preview   |
+| Canvas API | Format Conversion |
+
+---
+
+## 🛠️ How to Run Locally
+
+```bash
+git clone https://github.com/yourusername/pixmorph.git
+cd pixmorph
+npm install
+npm run dev
+Make sure to use a local server to enable proper file and blob handling.
+
+⚡ File Support
+Supported formats for input:
+
+.jpg
+
+.jpeg
+
+.png
+
+.webp
+
+Output options:
+
+JPG / JPEG
+
+PNG
+
 ```
+💡 Future Improvements
+🧼 Image compression support
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+🧪 Add tests with Vitest or Jest
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+📱 PWA support for mobile use
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+📤 Drag-and-drop zone
+
+🖌️ Filter & editing tools (coming soon!)
+
